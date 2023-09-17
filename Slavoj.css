@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+
+        
+}
+
+.header img{
+
+    height: 15vh;
+    margin: auto;
+
+}
+
+
+.header {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8),rgba(235, 236, 236, 0.0));
+    height: 15vh;
+    display: flex;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
+    
+}
+
+.header h1{
+    font-size: 3vh;
+    display: inline-block;
+    margin:auto;
+}
+
+.header a{
+    font-size: 3vh;
+    display: inline-block;
+    margin:auto;
+    font: 'Barlow';
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nextmatch{
+    height: 50vh;
+    padding-top: 3vh;
+    background-image: linear-gradient(rgba(255,255,240,0.6),rgba(255,255,240,0.6)), url(images/grass-2616911_1280.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+
+.nextmatch h1{
+    text-align: center;
+}
+
+.nextmatch h3{
+    text-align: center;
+    line-height: 150%;
+    padding-top: 5vh;
+    font-size: 3vh;
+}
+.nextmatch2{
+    display:flex;
+    padding-top: 15vh;
+}
+
+.nextmatch h2{
+    font-size:5vh;
+    display: inline-block;
+    margin: auto;
+
+}
+
+.photogallery{
+    
+    background-color:;
+    height: 500px;
+}
+
+.carousel{
+    position:relative;
+    height:600px;
+    width:80%;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+.carousel img{
+    width: 100%;  
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+
+.carousel_track-container{
+
+    height:100%;
+    position:relative;
+    list-style: none;
+    overflow: hidden;
+
+}
+
+.carousel_track{
+    padding:0;
+    margin:0;
+    list-style:none;
+    height:100%;
+    position:relative;
+    transition: transform 250ms ease-in;
+
+}
+
+.carousel_slide{
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+}
+
+.carousel__button_l{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background: transparent;
+    border: 0;
+    left:-5%;
+    cursor: pointer;
+}
+
+.carousel__button_r{
+    position: absolute;
+    top:50%;
+    left: 101%;
+    
+    transform:translateY(-50%);
+    border: 0;
+    background: transparent;  
+    cursor: pointer;
+}
+
+.carousel_nav{
+    
+    display:flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel_indicator{
+    border:0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0,0,0,0.3);
+    margin: 15px 15px;
+    cursor: pointer;
+}
+
+.carousel_indicator.current-slide{
+    background: rgba(0,0,0,0.75);
+}
