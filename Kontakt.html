@@ -11,16 +11,69 @@
 </head>
     
 <body>
-    <div class="header" >
+    <section class="header" >
         <a href="index.html">
         <img src="Images/logo_original.png">
         </a>
-        <h1>Tým</h1>
+        
+        <a href="Tym.html">Tým</a>
         <a href="https://www.fotbal.cz/souteze/turnaje/zapas/d48f9f46-a63d-45f2-9b1c-ab554e17d7db">Rozpis utkání</a>
         <a href="https://www.fotbal.cz/souteze/turnaje/table/d48f9f46-a63d-45f2-9b1c-ab554e17d7db">Tabulka</a>
         <a href="Kontakt.html">Kontakt</a>
-    </div>
-    
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1277.73234439195!2d14.720361999956676!3d50.17114742166335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bf14500a6d489%3A0x373f61861984fd21!2zRm90YmFsb3bDqSBIxZlpxaF0xJsgTMOhem7EmyBUb3XFoWXFiA!5e0!3m2!1scs!2scz!4v1694953216578!5m2!1scs!2scz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        </section>
 
+    <section>
+    <div class="mobile" id="Mobile">
+        <a href="index.html">
+        <img src="Images/logo_original.png">
+        </a>
+        <div class="bars"><i class="fa fa-bars fa-3x" onclick="showMenu(); hiderest()";></i></div>
+    <div class="mobile-header" id="mobileHeader">
+        <a href="index.html">
+        <img src="Images/logo_original.png">
+        </a><br>
+        <div class="cross"><i class="fa fa-times fa-3x" onclick="hideMenu(); showrest()"></i></div>
+        <a href="Tym.html">Tým</a><br>
+        <a href="https://www.fotbal.cz/souteze/turnaje/zapas/d48f9f46-a63d-45f2-9b1c-ab554e17d7db">Rozpis utkání</a><br>
+        <a href="https://www.fotbal.cz/souteze/turnaje/table/d48f9f46-a63d-45f2-9b1c-ab554e17d7db">Tabulka</a><br>
+        <a href="Kontakt.html">Kontakt</a><br>
+    
+    </div>
+    </div>
+    </section>
+<div class="rest">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1277.73234439195!2d14.720361999956676!3d50.17114742166335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bf14500a6d489%3A0x373f61861984fd21!2zRm90YmFsb3bDqSBIxZlpxaF0xJsgTMOhem7EmyBUb3XFoWXFiA!5e0!3m2!1scs!2scz!4v1694953216578!5m2!1scs!2scz" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    
+<script> 
+      
+    
+    console.log(10)
+
+var Rest = document.getElementById("rest");
+
+function hiderest(){
+        Rest.style.display = "none";
+        }
+function showrest(){
+        Rest.style.display = "";
+        }
+
+var navLinks = document.getElementById("mobileHeader");
+        
+function showMenu(){
+            navLinks.style.display = "block";
+            navLinks.style.right = "0";
+            navLinks.style.top = "0";
+        }
+function hideMenu(){
+            navLinks.style.display = "none";
+            navLinks.style.right = "-300vh";    
+            
+        }
+</script>
 </body>
+    
+
+</html>

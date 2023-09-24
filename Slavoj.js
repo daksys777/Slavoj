@@ -88,4 +88,26 @@ dotsNav.addEventListener('click', e => {
 })
 
 
+    var Rest = document.getElementById("rest");
+
+        function hiderest(){
+            Rest.style.display = "none";
+        }
+        function showrest(){
+            Rest.style.display = "";
+        }
+
+    var navLinks = document.getElementById("mobileHeader");
+        
+        function showMenu(){
+            navLinks.style.display = "block";
+            navLinks.style.right = "0";
+            navLinks.style.top = "0";
+        }
+        function hideMenu(){
+            navLinks.style.display = "none";
+            navLinks.style.right = "-300vh";    
+            
+        }
+    
 

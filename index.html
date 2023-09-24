@@ -12,21 +12,44 @@
 
     
 <body>
-    <div class="header" >
+    <section class="header" >
         <a href="index.html">
         <img src="Images/logo_original.png">
         </a>
-        <h1>Tým</h1>
+        
+        <a href="Tym.html">Tým</a>
         <a href="https://www.fotbal.cz/souteze/turnaje/zapas/d48f9f46-a63d-45f2-9b1c-ab554e17d7db">Rozpis utkání</a>
         <a href="https://www.fotbal.cz/souteze/turnaje/table/d48f9f46-a63d-45f2-9b1c-ab554e17d7db">Tabulka</a>
         <a href="Kontakt.html">Kontakt</a>
-    </div>
+        
+        </section>
+
+    <section>
+    <div class="mobile" id="Mobile">
+        <a href="index.html">
+        <img src="Images/logo_original.png">
+        </a>
+        <div class="bars"><i class="fa fa-bars fa-3x" onclick="showMenu(); hiderest()";></i></div>
+    <div class="mobile-header" id="mobileHeader">
+        <a href="index.html">
+        <img src="Images/logo_original.png">
+        </a><br>
+        <div class="cross"><i class="fa fa-times fa-3x" onclick="hideMenu(); showrest()"></i></div>
+        <a href="Tym.html">Tým</a><br>
+        <a href="https://www.fotbal.cz/souteze/turnaje/zapas/d48f9f46-a63d-45f2-9b1c-ab554e17d7db">Rozpis utkání</a><br>
+        <a href="https://www.fotbal.cz/souteze/turnaje/table/d48f9f46-a63d-45f2-9b1c-ab554e17d7db">Tabulka</a><br>
+        <a href="Kontakt.html">Kontakt</a><br>
     
+    </div>
+    </div>
+    </section>
+        
+    <section id="rest">
     <div class="nextmatch">
         <h1>Další zápas</h1>
         <div class="nextmatch2">
             <h2>Sk Slavoj Toušeň</h2>
-            <i class="fa-solid fa-xmark fa-5x" style="color: #0c0d0d;"></i>
+            <span id="up"><i class="fa-solid fa-xmark fa-5x" style="color: #0c0d0d;"></i></span>
             <h2>Hovorčovice B</h2>
         </div>
         <h3>Čas utkání: 17:00 <br>
@@ -70,6 +93,7 @@
     </div>
         
     </div>
+    </section>
 
 <script src="Slavoj.js"> 
          
